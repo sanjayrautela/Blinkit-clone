@@ -14,12 +14,12 @@
 #hero_section{
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
 }
 #category_list{
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 90vw;
     justify-content: center;
     margin: auto;
 }
@@ -134,4 +134,54 @@ footer{
       line-height: 2;
       color: #212529;
   } 
+  @media screen and (max-width:500px) {
+    #hero-section{
+        display: none;
+    }
+    nav{
+        flex-direction: column;
+    }
+
+    #delivery-div{
+        border: none !important;
+    }
+    #search_bar{
+        display: flex;
+        align-items: center;
+    }
+    #search_bar>input{
+        width: 80vw;
+    }
+    .scrollable_div{
+        margin-top: 50px;
+    }
+
+    #footer_r3{
+        width: 90%;
+        text-align: justify;
+    }
+    #footer_r2{
+        flex-direction: column;
+    }
+    #footer_r2>p{
+        width: 100%;
+        text-align: justify;
+    }
+    #social-icons{
+        margin-top: 20px;
+    }
+    #footer_r1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #useful_links,#categories_links{
+        width: 100%;
+    }
+
+    td{
+        text-align: center;
+    }
+}
+
   
